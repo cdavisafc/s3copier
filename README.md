@@ -7,11 +7,11 @@ A simple task for demonstrating [Diego](https://github.com/cloudfoundry-incubato
 ```bash
 git clone https://github.com/camelpunch/s3copier
 cd s3copier
-bundle install --binstubs
+bundle install
 ```
 
 ## Usage
 
 ```bash
-bin/rake cp[mysourcebucket/somekey,mydestinationbucket/anotherkey]
+bundle exec ./copy.rb mysourcebucket/somekey mydestinationbucket/anotherkey
 ```
